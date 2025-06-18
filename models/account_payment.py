@@ -102,4 +102,3 @@ class Account_payment_methods(models.Model):
                         (credit + invoice).reconcile()
                         remaining_credit -= amount
                 
-                _logger.info(f"Conciliado crédito {credit.id} con factura {invoice.id} - Monto: {amount}")
