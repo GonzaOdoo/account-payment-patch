@@ -6,7 +6,7 @@ import logging
 
 _logger = logging.getLogger(__name__)
 class Account_payment_methods(models.Model):
-    _name = 'account.payment.group'
+    _inherit = 'account.payment.group'
     
     def action_reconcile_payments(self):
         self.ensure_one()
